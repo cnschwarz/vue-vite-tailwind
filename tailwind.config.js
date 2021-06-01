@@ -1,7 +1,9 @@
 module.exports = {
-  purge: [],
+  purge: [
+    "./src/**/*.jsx", "./index.html",
+  ], // needed for purging of styles
   darkMode: false, // or 'media' or 'class'
-  theme: {
+  theme: { //definition of color palette, fonts, type scale, border sizes, breakpoints etc.
     extend: {
       colors: {
         brand: {
@@ -15,7 +17,7 @@ module.exports = {
       },
     },
   },
-  variants: {
+  variants: { // controls which variants are generated for the core utilities
     extend: {},
   },
   plugins: [],

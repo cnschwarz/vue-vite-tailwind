@@ -27,4 +27,20 @@ Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
 
 ## Tailwind cmds
 
+
+### Scaffolding the entire default configuration
 `npx tailwindcss init --full`
+
+### building the current configuration
+`npx tailwindcss-cli build css/tailwind.css -o build/tailwind.css`
+
+### generating PostCSS configuration file
+`npx tailwindcss init -p`
+
+### different file name for config
+`npx tailwindcss init tailwindcss-config.js`
+
+## Purging styles
+  `purge: {
+    content: ["./src/**/*.jsx", "./index.html"],
+  },`
